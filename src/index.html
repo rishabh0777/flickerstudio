@@ -10,17 +10,22 @@
     <link href="./output.css" rel="stylesheet">
     <title>FLICKERSTUDIO</title> 
 </head>
-<body>
+<body className="cursor-none">
     <!-- <section id="loader" class="w-screen h-screen fixed top-0 ">
         
     </section> -->
-    <div class="cursor absolute pointer-events-none mix-blend-difference flex justify-center items-center"></div>
-    <main class="w-screen min-h-screen bg-zinc-800 overflow-hidden">
-        <section id="page1" class="w-full h-screen"></section>
-        <section id="page2" class="w-full h-screen"></section>
-        <section id="page3" class="w-full h-screen"></section>
-        <section id="page4" class="w-full h-screen"></section>
-        <section id="page5" class="w-full h-screen"></section>
+    
+    
+    <main class="w-screen h-full bg-zinc-800 overflow-x-hidden ">
+        <div class="outer-cursor bg-transparent w-[6rem] h-[6rem] rounded-full fixed mix-blend-difference flex justify-center items-center border-[0.1em] border-white z-200 duration-300 all-ease-out transform -translate-1/2">
+        </div>
+        <div class="inner-cursor bg-white w-[1rem] h-[1rem] rounded-full fixed flex z-1500 transform -translate-1/2"></div>
+
+        <section id="page1" class="w-full h-screen relative"></section>
+        <section id="page2" class="w-full h-screen relative"></section>
+        <section id="page3" class="w-full h-screen relative"></section>
+        <section id="page4" class="w-full h-screen relative"></section>
+        <section id="page5" class="w-full h-screen relative"></section>
     </main>
       
 <script src="animate.js"></script>
